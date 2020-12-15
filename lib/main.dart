@@ -10,8 +10,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Web Auth',
-      theme: ThemeData(primaryColor: Colors.green),
+      theme: ThemeData(primaryColor: Colors.red),
       home: FutureBuilder<Object>(
           future: Firebase.initializeApp(),
           builder: (context, snapshot) {
